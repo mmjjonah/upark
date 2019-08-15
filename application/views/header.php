@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="<?=$res ?>css/fontAwesome.css">
     <link rel="stylesheet" href="<?=$res ?>css/templatemo-style.css">  
   </head>
-    <body class="bd">
+    <body>
       <div class="overlay"></div>
         <section class="top-part">
           <video controls autoplay loop>
@@ -33,22 +33,23 @@
             <nav>
               <span class="cd-marker item-1"></span>
               <ul>
-                <li class="selected"><a href="<?= site_url() ?>"><div class="image-icon"><img src="<?=$res ?>img/home-icon.png"></div><h6>Acceuil</h6></a></li>
+                <li class="selected"><div class="image-icon" id="ico_home"><img src="<?=$res ?>img/home-icon.png"></div><h6>Acceuil</h6></li>
                 <li><div class="image-icon" id="ico_entree"><img src="<?=$res ?>img/in.png"></div><h6>Entrée</h6></li>
-                <li><a href="<?= site_url('sorti') ?>"><div class="image-icon"><img src="<?=$res ?>img/out.png"></div><h6>Sortie</h6></a></li>
-                <li><a href="<?= site_url('client') ?>"><div class="image-icon"><img src="<?=$res ?>img/client.png"></div><h6>Clients</h6></a></li>
-                <li><a href="<?= site_url('ticket') ?>"><div class="image-icon"><img src="<?=$res ?>img/ticket.png"></div><h6>Tickets</h6></a></li>
+                <li><div class="image-icon" id="ico_sorti"><img src="<?=$res ?>img/out.png"></div><h6>Sortie</h6></li>
+                <li><div class="image-icon" id="ico_ticket"><img src="<?=$res ?>img/ticket.png"></div><h6>Tickets</h6></li>
+                <li><div class="image-icon" id="ico_connexion"><img src="<?=$res ?>img/connexion.png"></div><h6>Connexion</h6></li>
               </ul>
             </nav> 
           </div> <!-- .cd-slider-nav -->
           <ul class="cd-hero-slider">
             <li class="selected">
               <div class="heading">
-                <h1><?= $title ?></h1>
-                <span><?= $coms ?></span>
+                <h1>U-PARK</h1>
+                <span>Bienvenue chez nous</span>
               </div>
               <div class="cd-half-width <?= $num ?>-slide">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="content <?= $num ?>-content">
+                        <div class="_body">

@@ -6,6 +6,11 @@ http://www.templatemo.com/tm-503-newline
 
 */
 
+#type_conn {
+  width: 40%;
+}
+
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -211,7 +216,7 @@ video::-webkit-media-controls {
 }
 
 .first-slide {
-  background-color: #fff;
+  background-color: #ddd;
   width: 100%;
 }
 
@@ -703,7 +708,7 @@ footer a {
   .content {
     margin-bottom: 100px;
     margin-top: -100px;
-    background-color: #fff;
+    background-color: #eee;
     border-top: 15px solid #4dc3ff;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   }
