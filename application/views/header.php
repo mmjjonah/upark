@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="<?=$res ?>css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="<?=$res?>css/main.css">
     <link rel="stylesheet" href="<?=$res ?>css/fontAwesome.css">
-    <link rel="stylesheet" href="<?=$res ?>css/templatemo-style.css">  
+    <link rel="stylesheet" href="<?=$res ?>css/templatemo-style.css">
   </head>
     <body>
       <div class="overlay"></div>
@@ -33,19 +33,18 @@
             <nav>
               <span class="cd-marker item-1"></span>
               <ul>
-                <li class="selected"><div class="image-icon" id="ico_home"><img src="<?=$res ?>img/home-icon.png"></div><h6>Acceuil</h6></li>
-                <li><div class="image-icon" id="ico_entree"><img src="<?=$res ?>img/in.png"></div><h6>Entrée</h6></li>
-                <li><div class="image-icon" id="ico_sorti"><img src="<?=$res ?>img/out.png"></div><h6>Sortie</h6></li>
-                <li><div class="image-icon" id="ico_ticket"><img src="<?=$res ?>img/ticket.png"></div><h6>Tickets</h6></li>
-                <li><div class="image-icon" id="ico_connexion"><img src="<?=$res ?>img/connexion.png"></div><h6>Connexion</h6></li>
+                <li class="selected"><a href="<?= base_url().'home'?>"><div class="image-icon" id="ico_home"><img src="<?=$res ?>img/home-icon.png"></div><h6>Acceuil</h6></a></li>
+                <li><a href="<?= base_url().'entree'?>"><div class="image-icon" id="ico_entree"><img src="<?=$res ?>img/in.png"></div><h6>Entrée</h6></a></li>
+                <li><a href="<?= base_url().'sorti'?>"><div class="image-icon" id="ico_sorti"><img src="<?=$res ?>img/out.png"></div><h6>Sortie</h6></a></li>
+                <li><div class="image-icon"><img src="<?=$res ?>img/ticket.png" id="ico_ticket"></div><h6>Tickets</h6></li>
+                <li><a href="<?= base_url().'connexion'?>"><div class="image-icon" id="ico_conn"><img src="<?=$res ?>img/connexion.png"></div><h6>Connexion</h6></a></li>
               </ul>
             </nav> 
           </div> <!-- .cd-slider-nav -->
           <ul class="cd-hero-slider">
             <li class="selected">
               <div class="heading">
-                <h1>U-PARK</h1>
-                <span>Bienvenue chez nous</span>
+                <?= $head ?>
               </div>
               <div class="cd-half-width <?= $num ?>-slide">
                 <div class="container">

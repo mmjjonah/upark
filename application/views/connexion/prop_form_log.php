@@ -1,3 +1,4 @@
+                      <?= form_open("/connexion/create_prop",array("class"=>"form form-horizontal")); ?>
                         <div class="form-group">
                           <label for="name">Nom :</label>
                           <input id="name" type="text" name="name" class="form-control" placeholder="Votre nom">
@@ -27,3 +28,9 @@
                           <label for="password">Mot de passe :</label>
                           <input id="password" type="password" name="password" class="form-control" placeholder="mot de passe">
                         </div>
+                        <div class="container-login100-form-btn m-t-32 mybtn">
+                      <button class="login100-form-btn" type="submit">
+                        S'inscrire
+                      </button>
+                    </div>
+                    <?= form_close() ?>
